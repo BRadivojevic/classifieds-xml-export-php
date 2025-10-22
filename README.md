@@ -1,14 +1,13 @@
 # Classifieds XML Export + FTPS (PHP)
-Builds a classifieds XML (Willhaben-like) and uploads via FTPS.
 
-## Run
-```bash
+Builds a small classifieds XML (Willhaben-style) and uploads it via FTPS.
+
+## Features
+- XML generator for vehicles
+- FTPS upload via cURL
+- Env-based credentials
+
+## Quick Start
 cp .env.example .env
 composer install
 php examples/generate_and_upload.php
-
-## C) Commit & push
-```bash
-git add .
-git commit -m "Initial: XML export + FTPS upload"
-git push -u origin main
